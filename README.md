@@ -1,11 +1,6 @@
 # IDE
 - Visual Studio Code with PlatformIO extension for building and uploading to ESP32
 
-# Latest Commit 
-### 29 - PGH Deployment Continuous Transmission
-- if SD card fails, program will still continue
-- payload is also stored in a backup String variable, but gets replaced when a new measurement is made every minute
-
 # Microcontrollers
 ### ESP32_DevKitC_V4 (WROOM-32E)
 - [Datasheet] (https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)
