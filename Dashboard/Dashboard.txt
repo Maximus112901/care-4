@@ -1,0 +1,5406 @@
+[
+    {
+        "id": "2645d1dc770db682",
+        "type": "tab",
+        "label": "Overview",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0bda988831a07691",
+        "type": "tab",
+        "label": "Data Processing",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "76e8039e6f804332",
+        "type": "tab",
+        "label": "UI Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f41a1d872a41b6e7",
+        "type": "tab",
+        "label": "Survey Terminal",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1b6599bcc64f15ea",
+        "type": "tab",
+        "label": "Debugging",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d326894b03b08307",
+        "type": "tab",
+        "label": "External Survey Terminal",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "10e78a89.5b4fd5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "352759f60fdd0c5c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 30,
+                "sy": 30,
+                "gx": 10,
+                "gy": 10,
+                "cx": 10,
+                "cy": 10,
+                "px": 10,
+                "py": 10
+            }
+        }
+    },
+    {
+        "id": "c3f5281e8ff308b1",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "rb8dietqbgooam6hqqkffep3dfuihttd3ldho4antxfpitqutvx2mhgbgvwslion",
+        "server": "nodered05.remote-red.com",
+        "region": "sg"
+    },
+    {
+        "id": "2ebc9347.9cd16c",
+        "type": "ui_group",
+        "name": "Consumo",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "4b4a24582e585eb9",
+        "type": "ui_group",
+        "name": "Node 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4fc483ae736f7c4c",
+        "type": "ui_group",
+        "name": "Node 0",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "010a4e1ea385869d",
+        "type": "ui_group",
+        "name": "Node Information",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b6ebde45af606d7e",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "7a481beaeac20086",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "a532d58d02f5af8f",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "f9c52d314686f6f0",
+        "type": "ui_group",
+        "name": "Air Quality Overview",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "48cfc13fd2cd784d",
+        "type": "ui_group",
+        "name": "Node Information",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "44eb6bda1cfa056c",
+        "type": "ui_group",
+        "name": "Air Quality Parameters",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "af28d118f24f5b10",
+        "type": "ui_group",
+        "name": "Node Information",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "29e928750d02add5",
+        "type": "ui_group",
+        "name": "Air Quality Parameters",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8339dd64b792aa74",
+        "type": "ui_group",
+        "name": "Node Information",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b3339d1e7a3a514b",
+        "type": "ui_group",
+        "name": "Air Quality Parameters",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d7d976dcebaecb53",
+        "type": "ui_group",
+        "name": "Air Quality Graphs",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "124ec8c65985746d",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default"
+    },
+    {
+        "id": "7ef9b8a9ee2db7d3",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "ab0d1c2e5890f237",
+        "type": "ui-page",
+        "name": "Node 0",
+        "ui": "124ec8c65985746d",
+        "path": "/pageM",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "7ef9b8a9ee2db7d3",
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "92d2119ab12eb5fa",
+        "type": "ui-group",
+        "name": "Relative Humidity",
+        "page": "ab0d1c2e5890f237",
+        "width": "12",
+        "height": "1",
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": "false"
+    },
+    {
+        "id": "303b2c5b498aa336",
+        "type": "ui-group",
+        "name": "Air Quality Overview",
+        "page": "ab0d1c2e5890f237",
+        "width": "10",
+        "height": "1",
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "acc62432ca6ecca1",
+        "type": "ui-group",
+        "name": "Temperature",
+        "page": "ab0d1c2e5890f237",
+        "width": "12",
+        "height": "1",
+        "order": 4,
+        "showTitle": false,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "7a3306f1ec41f701",
+        "type": "ui-group",
+        "name": "Node Information",
+        "page": "ab0d1c2e5890f237",
+        "width": "2",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "aeeed43f653b3410",
+        "type": "ui-group",
+        "name": "Carbon Monoxide",
+        "page": "ab0d1c2e5890f237",
+        "width": "12",
+        "height": "1",
+        "order": 5,
+        "showTitle": false,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "7381755221c44d5d",
+        "type": "ui-group",
+        "name": "Nitrogen Dioxide",
+        "page": "ab0d1c2e5890f237",
+        "width": "12",
+        "height": "1",
+        "order": 6,
+        "showTitle": false,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "56f71db8d32fb665",
+        "type": "ui-group",
+        "name": "Carbon Dioxide",
+        "page": "ab0d1c2e5890f237",
+        "width": "12",
+        "height": "1",
+        "order": 7,
+        "showTitle": false,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "fc7414f0c153bcdb",
+        "type": "ui-group",
+        "name": "TVOCs",
+        "page": "ab0d1c2e5890f237",
+        "width": "12",
+        "height": "1",
+        "order": 8,
+        "showTitle": false,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "d9a9374417ec40c4",
+        "type": "ui-group",
+        "name": "Sulfur Dioxide",
+        "page": "ab0d1c2e5890f237",
+        "width": "12",
+        "height": "1",
+        "order": 9,
+        "showTitle": false,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "50196f945c9b0686",
+        "type": "ui-group",
+        "name": "PM2.5",
+        "page": "ab0d1c2e5890f237",
+        "width": "12",
+        "height": "1",
+        "order": 10,
+        "showTitle": false,
+        "className": "",
+        "visible": "false",
+        "disabled": "false"
+    },
+    {
+        "id": "4a56b8fc5b7ba724",
+        "type": "ui-page",
+        "name": "Overview",
+        "ui": "124ec8c65985746d",
+        "path": "/pageN",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "7ef9b8a9ee2db7d3",
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "83d60f3d69fccf51",
+        "type": "ui-group",
+        "name": "AQI",
+        "page": "ab0d1c2e5890f237",
+        "width": "12",
+        "height": "1",
+        "order": 11,
+        "showTitle": false,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "76b9dc3e43c791b8",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "7597c495659a5bf7",
+        "order": 3,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7597c495659a5bf7",
+        "type": "ui_tab",
+        "name": "Survey_Terminal",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fb3ed38211a35668",
+        "type": "remote-config",
+        "name": "IAQMS Dashboard",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/dashboard",
+        "instancehash": "q81t731k82t7ydf9oup8iafs1kbsmq28aa7keqqhp9ujc8w70kc7k36wsmael35a",
+        "server": "nodered05.remote-red.com",
+        "region": "sg"
+    },
+    {
+        "id": "64ccca707074c2b7",
+        "type": "remote-config",
+        "name": "IAQMS Dashboard",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/dashboard",
+        "instancehash": "q81t731k82t7ydf9oup8iafs1kbsmq28aa7keqqhp9ujc8w70kc7k36wsmael35a",
+        "server": "nodered05.remote-red.com",
+        "region": "sg"
+    },
+    {
+        "id": "8c45a1341fd57dc4",
+        "type": "ui_group",
+        "name": "Carbon_Monoxide",
+        "tab": "7597c495659a5bf7",
+        "order": 4,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "674180135073528b",
+        "type": "ui_group",
+        "name": "Nitrogen_Dioxide",
+        "tab": "7597c495659a5bf7",
+        "order": 5,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3a9d9dac206a8b03",
+        "type": "ui_group",
+        "name": "Carbon_Dioxide",
+        "tab": "7597c495659a5bf7",
+        "order": 6,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "28896e1cab19618b",
+        "type": "ui_group",
+        "name": "TVOCs",
+        "tab": "7597c495659a5bf7",
+        "order": 7,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "56384246e83fe405",
+        "type": "ui_group",
+        "name": "Sulfur_Dioxide",
+        "tab": "7597c495659a5bf7",
+        "order": 8,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "146571f1128269bf",
+        "type": "ui_group",
+        "name": "PM2.5",
+        "tab": "7597c495659a5bf7",
+        "order": 9,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ddb15ecdc4cca56f",
+        "type": "ui-group",
+        "name": "AQI Heatmap",
+        "page": "4a56b8fc5b7ba724",
+        "width": "12",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7509acf1abc0de9d",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ef319c9c5752d308",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8259c02aa55dbff7",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5773261855a4be71",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2e46294093b219bd",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8bd88881f09fe9da",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a914be80dc9de968",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 10,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "d190aaed2de036fb",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 11,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "82eccc5d8ef8d19c",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 12,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "c7135d151ce8b9cf",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 15,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "b6b905a2a0f4a9ca",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 16,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "d549ec19035fedbf",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 17,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "fd98a67836a78928",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 20,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "cfb07b541c370243",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 21,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "f5e31acacb109bf1",
+        "type": "ui_spacer",
+        "z": "0bda988831a07691",
+        "name": "spacer",
+        "group": "936ecf9d76b3194c",
+        "order": 22,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "2da9ee60fe561820",
+        "type": "remote-config",
+        "name": "IAQMS Dashboard",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/dashboard",
+        "instancehash": "q81t731k82t7ydf9oup8iafs1kbsmq28aa7keqqhp9ujc8w70kc7k36wsmael35a",
+        "server": "nodered05.remote-red.com",
+        "region": "sg"
+    },
+    {
+        "id": "5cffc6e6c9e1815c",
+        "type": "ui-group",
+        "name": "AQI",
+        "page": "4a56b8fc5b7ba724",
+        "width": "4",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "f491eab633a3ed2c",
+        "type": "ui-group",
+        "name": "Recent Responses",
+        "page": "4a56b8fc5b7ba724",
+        "width": "12",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7dbcc621e59013d3",
+        "type": "ui-page",
+        "name": "Debugging",
+        "ui": "124ec8c65985746d",
+        "path": "/pageP",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "7ef9b8a9ee2db7d3",
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "b9ba6607046204ab",
+        "type": "ui-group",
+        "name": "log.txt",
+        "page": "7dbcc621e59013d3",
+        "width": "12",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "29cda8db2548026c",
+        "type": "ui-group",
+        "name": "External Survey Terminal Test",
+        "page": "7dbcc621e59013d3",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "8e5c232907559b78",
+        "type": "ui_group",
+        "name": "Demo",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "92d45eef4c593c7c",
+        "type": "ui_group",
+        "name": "All_Symptoms",
+        "tab": "7597c495659a5bf7",
+        "order": 10,
+        "disp": false,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d1670109feb26ed4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.42.0.1",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "712b701e3f1a6ef8",
+        "type": "ui_group",
+        "name": "RH",
+        "tab": "7597c495659a5bf7",
+        "order": 1,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a5574221feb60fd6",
+        "type": "link in",
+        "z": "2645d1dc770db682",
+        "name": "link in 1",
+        "links": [
+            "c4787c05d782a739"
+        ],
+        "x": 195,
+        "y": 280,
+        "wires": [
+            [
+                "20be41f23b11c46b",
+                "be48eaa2223266fb",
+                "c490713af0c85150",
+                "05943b5656e895af"
+            ]
+        ]
+    },
+    {
+        "id": "20be41f23b11c46b",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "get node 0 payloads",
+        "func": "var nodeNum = 0;\nvar payload = msg.payload;\n\n// get all unique nodeIDs\nvar nodeIDs = [];\nfor(let i = 0; i < payload.length; i++){\n    if (!(nodeIDs.includes(payload[i][\"nodeID\"]))){\n        nodeIDs.push(payload[i][\"nodeID\"]);\n    }\n}\nnodeIDs.sort();\n\n// return only the payloads with the corresponding nodeNum\nvar extractedPayloads = [];\nfor(let j = 0; j < payload.length; j++){\n    if (payload[j][\"nodeID\"] == nodeIDs[nodeNum]){\n        // remove duplicates\n        if (!extractedPayloads.includes(payload[j])){\n            extractedPayloads.push(payload[j]);\n        }\n    }\n}\n\nmsg.id = nodeIDs[nodeNum];\nmsg.payload = extractedPayloads;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "e7878918c2c6c804"
+            ]
+        ]
+    },
+    {
+        "id": "e7878918c2c6c804",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "generate aqi chart",
+        "func": "var parameter = \"aqi\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "75482b865a409675"
+            ]
+        ]
+    },
+    {
+        "id": "75482b865a409675",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 280,
+        "wires": [
+            [
+                "49e9ccb623386bcd"
+            ]
+        ]
+    },
+    {
+        "id": "49e9ccb623386bcd",
+        "type": "ui-gauge",
+        "z": "2645d1dc770db682",
+        "name": "AQI Gauge",
+        "group": "5cffc6e6c9e1815c",
+        "order": 9,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Node 0",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "51",
+                "color": "#fff82e"
+            },
+            {
+                "from": "76",
+                "color": "#ffc800"
+            },
+            {
+                "from": "101",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 990,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "be48eaa2223266fb",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "get node 1 payloads",
+        "func": "var nodeNum = 1;\nvar payload = msg.payload;\n\n// get all unique nodeIDs\nvar nodeIDs = [];\nfor(let i = 0; i < payload.length; i++){\n    if (!(nodeIDs.includes(payload[i][\"nodeID\"]))){\n        nodeIDs.push(payload[i][\"nodeID\"]);\n    }\n}\nnodeIDs.sort();\n\n// return only the payloads with the corresponding nodeNum\nvar extractedPayloads = [];\nfor(let j = 0; j < payload.length; j++){\n    if (payload[j][\"nodeID\"] == nodeIDs[nodeNum]){\n        // remove duplicates\n        if (!extractedPayloads.includes(payload[j])){\n            extractedPayloads.push(payload[j]);\n        }\n    }\n}\n\nmsg.id = nodeIDs[nodeNum];\nmsg.payload = extractedPayloads;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "db0e317caaf83602"
+            ]
+        ]
+    },
+    {
+        "id": "db0e317caaf83602",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "generate aqi chart",
+        "func": "var parameter = \"aqi\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 320,
+        "wires": [
+            [
+                "a12f9c20dc289fe3"
+            ]
+        ]
+    },
+    {
+        "id": "a12f9c20dc289fe3",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 320,
+        "wires": [
+            [
+                "c9fc9c93e8ae980d"
+            ]
+        ]
+    },
+    {
+        "id": "c9fc9c93e8ae980d",
+        "type": "ui-gauge",
+        "z": "2645d1dc770db682",
+        "name": "AQI Gauge",
+        "group": "5cffc6e6c9e1815c",
+        "order": 9,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Node 1",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "51",
+                "color": "#fff82e"
+            },
+            {
+                "from": "76",
+                "color": "#ffc800"
+            },
+            {
+                "from": "101",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 990,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "c490713af0c85150",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "get node 2 payloads",
+        "func": "var nodeNum = 2;\nvar payload = msg.payload;\n\n// get all unique nodeIDs\nvar nodeIDs = [];\nfor(let i = 0; i < payload.length; i++){\n    if (!(nodeIDs.includes(payload[i][\"nodeID\"]))){\n        nodeIDs.push(payload[i][\"nodeID\"]);\n    }\n}\nnodeIDs.sort();\n\n// return only the payloads with the corresponding nodeNum\nvar extractedPayloads = [];\nfor(let j = 0; j < payload.length; j++){\n    if (payload[j][\"nodeID\"] == nodeIDs[nodeNum]){\n        // remove duplicates\n        if (!extractedPayloads.includes(payload[j])){\n            extractedPayloads.push(payload[j]);\n        }\n    }\n}\n\nmsg.id = nodeIDs[nodeNum];\nmsg.payload = extractedPayloads;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "a6fe474b67555771"
+            ]
+        ]
+    },
+    {
+        "id": "a6fe474b67555771",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "generate aqi chart",
+        "func": "var parameter = \"aqi\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "c08512ae76e07672"
+            ]
+        ]
+    },
+    {
+        "id": "c08512ae76e07672",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 360,
+        "wires": [
+            [
+                "3a49f15436bebbc7"
+            ]
+        ]
+    },
+    {
+        "id": "3a49f15436bebbc7",
+        "type": "ui-gauge",
+        "z": "2645d1dc770db682",
+        "name": "AQI Gauge",
+        "group": "5cffc6e6c9e1815c",
+        "order": 9,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Node 2",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "51",
+                "color": "#fff82e"
+            },
+            {
+                "from": "76",
+                "color": "#ffc800"
+            },
+            {
+                "from": "101",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 990,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "05943b5656e895af",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "get node 3 payloads",
+        "func": "var nodeNum = 3;\nvar payload = msg.payload;\n\n// get all unique nodeIDs\nvar nodeIDs = [];\nfor(let i = 0; i < payload.length; i++){\n    if (!(nodeIDs.includes(payload[i][\"nodeID\"]))){\n        nodeIDs.push(payload[i][\"nodeID\"]);\n    }\n}\nnodeIDs.sort();\n\n// return only the payloads with the corresponding nodeNum\nvar extractedPayloads = [];\nfor(let j = 0; j < payload.length; j++){\n    if (payload[j][\"nodeID\"] == nodeIDs[nodeNum]){\n        // remove duplicates\n        if (!extractedPayloads.includes(payload[j])){\n            extractedPayloads.push(payload[j]);\n        }\n    }\n}\n\nmsg.id = nodeIDs[nodeNum];\nmsg.payload = extractedPayloads;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "6e829c4ce92a37da"
+            ]
+        ]
+    },
+    {
+        "id": "6e829c4ce92a37da",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "generate aqi chart",
+        "func": "var parameter = \"aqi\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 400,
+        "wires": [
+            [
+                "a4fb3afc8242ac5d"
+            ]
+        ]
+    },
+    {
+        "id": "a4fb3afc8242ac5d",
+        "type": "function",
+        "z": "2645d1dc770db682",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 400,
+        "wires": [
+            [
+                "b4e4c87f6f3068e0"
+            ]
+        ]
+    },
+    {
+        "id": "b4e4c87f6f3068e0",
+        "type": "ui-gauge",
+        "z": "2645d1dc770db682",
+        "name": "AQI Gauge",
+        "group": "5cffc6e6c9e1815c",
+        "order": 9,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Node 3",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "51",
+                "color": "#fff82e"
+            },
+            {
+                "from": "76",
+                "color": "#ffc800"
+            },
+            {
+                "from": "101",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 990,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "f82c6bf81dc501e8",
+        "type": "file in",
+        "z": "0bda988831a07691",
+        "name": "read data.csv",
+        "filename": "C:\\Users\\Miguel Carlos\\Desktop\\School Stuff\\4th Year\\2nd Sem\\CoE 199\\Week 15\\data.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 240,
+        "y": 400,
+        "wires": [
+            [
+                "17da48ef2b418c4e"
+            ]
+        ]
+    },
+    {
+        "id": "17da48ef2b418c4e",
+        "type": "csv",
+        "z": "0bda988831a07691",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 210,
+        "y": 460,
+        "wires": [
+            [
+                "63f3883defd94fb9",
+                "c4787c05d782a739"
+            ]
+        ]
+    },
+    {
+        "id": "41f21f46b6dae4d9",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate humidity chart",
+        "func": "var parameter = \"humidity\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 580,
+        "wires": [
+            [
+                "5a03cbca80469466"
+            ]
+        ]
+    },
+    {
+        "id": "63f3883defd94fb9",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get node payloads",
+        "func": "var nodeNum = 0;\nnodeNum = global.get(\"nodeNum\");\nvar payload = msg.payload;\n\n// get all unique nodeIDs\nvar nodeIDs = [];\nfor(let i = 0; i < payload.length; i++){\n    if (!(nodeIDs.includes(payload[i][\"nodeID\"]))){\n        nodeIDs.push(payload[i][\"nodeID\"]);\n    }\n}\nnodeIDs.sort();\n\n// return only the payloads with the corresponding nodeNum\nvar extractedPayloads = [];\nfor(let j = 0; j < payload.length; j++){\n    if (payload[j][\"nodeID\"] == nodeIDs[nodeNum]){\n        // remove duplicates\n        if (!extractedPayloads.includes(payload[j])){\n            extractedPayloads.push(payload[j]);\n        }\n    }\n}\n\nmsg.id = nodeIDs[nodeNum];\nmsg.payload = extractedPayloads;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 460,
+        "wires": [
+            [
+                "41f21f46b6dae4d9",
+                "336bfb4c771bdaab",
+                "9b2cb07e9085f967",
+                "0f0e06c75a8b297b",
+                "d6b49d621c82d7c5",
+                "0f576636e9889429",
+                "fcae2c892bc5e6c9",
+                "2036fd0c6ffbcf0d",
+                "d3eefa2636d738e0",
+                "8b547da234435540",
+                "5330f57b23a8749c",
+                "d12059b64488261a",
+                "657b9c75b6298333",
+                "8f6b2333b193fb5f",
+                "b910da9dfb025f93",
+                "ba2876bbd24e16c6",
+                "0398aa4c0e3c3b82"
+            ]
+        ]
+    },
+    {
+        "id": "336bfb4c771bdaab",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate temperature chart",
+        "func": "var parameter = \"temperature\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 620,
+        "wires": [
+            [
+                "5bda30a7f3623b1d"
+            ]
+        ]
+    },
+    {
+        "id": "9b2cb07e9085f967",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate co chart",
+        "func": "var parameter = \"co\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 660,
+        "wires": [
+            [
+                "ed84a8aab8ca5f97"
+            ]
+        ]
+    },
+    {
+        "id": "0f0e06c75a8b297b",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate no2 chart",
+        "func": "var parameter = \"no2\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 700,
+        "wires": [
+            [
+                "9b69a75863665fe1"
+            ]
+        ]
+    },
+    {
+        "id": "d6b49d621c82d7c5",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate co2 chart",
+        "func": "var parameter = \"co2\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 740,
+        "wires": [
+            [
+                "4bcf99a32097cc59"
+            ]
+        ]
+    },
+    {
+        "id": "fcae2c892bc5e6c9",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate so2 chart",
+        "func": "var parameter = \"so2\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 820,
+        "wires": [
+            [
+                "c3b7323a4c53a9c4"
+            ]
+        ]
+    },
+    {
+        "id": "0f576636e9889429",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate tvoc chart",
+        "func": "var parameter = \"tvoc\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 780,
+        "wires": [
+            [
+                "05c01557589538d7"
+            ]
+        ]
+    },
+    {
+        "id": "2036fd0c6ffbcf0d",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate pm25 chart",
+        "func": "var parameter = \"pm25\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 860,
+        "wires": [
+            [
+                "0557fae3d7d83c14"
+            ]
+        ]
+    },
+    {
+        "id": "d3eefa2636d738e0",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate rssi chart",
+        "func": "var parameter = \"rssi\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 540,
+        "wires": [
+            [
+                "733a2fbcf2b81543"
+            ]
+        ]
+    },
+    {
+        "id": "8b547da234435540",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate latency chart",
+        "func": "var parameter = \"latency\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 500,
+        "wires": [
+            [
+                "f082a3ebbd120506"
+            ]
+        ]
+    },
+    {
+        "id": "5a03cbca80469466",
+        "type": "ui-chart",
+        "z": "0bda988831a07691",
+        "group": "92d2119ab12eb5fa",
+        "name": "Relative Humidity",
+        "label": "Relative Humidity (%)",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "86400",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "x": 910,
+        "y": 580,
+        "wires": [
+            [
+                "4f220aa5af1f01d9"
+            ]
+        ]
+    },
+    {
+        "id": "4f220aa5af1f01d9",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 580,
+        "wires": [
+            [
+                "fe54e8f5b238a747"
+            ]
+        ]
+    },
+    {
+        "id": "fe54e8f5b238a747",
+        "type": "ui-gauge",
+        "z": "0bda988831a07691",
+        "name": "Relative Humidity Gauge",
+        "group": "303b2c5b498aa336",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Relative Humidity",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ffc800"
+            },
+            {
+                "from": "63",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "83",
+                "color": "#ffc800"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1350,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "5bda30a7f3623b1d",
+        "type": "ui-chart",
+        "z": "0bda988831a07691",
+        "group": "acc62432ca6ecca1",
+        "name": "Temperature",
+        "label": "Temperature (°C)",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "x": 890,
+        "y": 620,
+        "wires": [
+            [
+                "7a8d237bf4b01d8c"
+            ]
+        ]
+    },
+    {
+        "id": "7a8d237bf4b01d8c",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 620,
+        "wires": [
+            [
+                "976764417a941739"
+            ]
+        ]
+    },
+    {
+        "id": "976764417a941739",
+        "type": "ui-gauge",
+        "z": "0bda988831a07691",
+        "name": "Temperature Gauge",
+        "group": "303b2c5b498aa336",
+        "order": 2,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperature",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-40",
+                "color": "#ff0000"
+            },
+            {
+                "from": "27.5",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "33.5",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "-40",
+        "max": "85",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1340,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "f082a3ebbd120506",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 500,
+        "wires": [
+            [
+                "e04ff81be32e17b8"
+            ]
+        ]
+    },
+    {
+        "id": "733a2fbcf2b81543",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 540,
+        "wires": [
+            [
+                "f8e4dc496efbfdc8"
+            ]
+        ]
+    },
+    {
+        "id": "e04ff81be32e17b8",
+        "type": "ui-text",
+        "z": "0bda988831a07691",
+        "d": true,
+        "group": "7a3306f1ec41f701",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Latency",
+        "label": "Latency (ms)",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1300,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f8e4dc496efbfdc8",
+        "type": "ui-text",
+        "z": "0bda988831a07691",
+        "d": true,
+        "group": "7a3306f1ec41f701",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "RSSI",
+        "label": "RSSI (dBm)",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1290,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "99b4fa4e26ea9456",
+        "type": "ui-text",
+        "z": "0bda988831a07691",
+        "group": "7a3306f1ec41f701",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "name": "Node ID",
+        "label": "Node ID",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1300,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5330f57b23a8749c",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get id",
+        "func": "var id = msg.id;\nmsg.payload = id;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 460,
+        "wires": [
+            [
+                "99b4fa4e26ea9456"
+            ]
+        ]
+    },
+    {
+        "id": "ed84a8aab8ca5f97",
+        "type": "ui-chart",
+        "z": "0bda988831a07691",
+        "group": "aeeed43f653b3410",
+        "name": "Carbon Monoxide",
+        "label": "Carbon Monoxide (ppm)",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "x": 910,
+        "y": 660,
+        "wires": [
+            [
+                "fb4b17456ffb4f27"
+            ]
+        ]
+    },
+    {
+        "id": "fb4b17456ffb4f27",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 660,
+        "wires": [
+            [
+                "4eee7adf63fb8427"
+            ]
+        ]
+    },
+    {
+        "id": "4eee7adf63fb8427",
+        "type": "ui-gauge",
+        "z": "0bda988831a07691",
+        "name": "Carbon Monoxide Gauge",
+        "group": "303b2c5b498aa336",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Carbon Monoxide",
+        "units": "ppm",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "35",
+                "color": "#fff82e"
+            },
+            {
+                "from": "51",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "1000",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1350,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9b69a75863665fe1",
+        "type": "ui-chart",
+        "z": "0bda988831a07691",
+        "group": "7381755221c44d5d",
+        "name": "Nitrogen Dioxide",
+        "label": "Nitrogen Dioxide (ppb)",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "x": 910,
+        "y": 700,
+        "wires": [
+            [
+                "e7bb29ebf8d918c4"
+            ]
+        ]
+    },
+    {
+        "id": "e7bb29ebf8d918c4",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 700,
+        "wires": [
+            [
+                "451da04c04654983"
+            ]
+        ]
+    },
+    {
+        "id": "451da04c04654983",
+        "type": "ui-gauge",
+        "z": "0bda988831a07691",
+        "name": "Nitrogen Dioxide Gauge",
+        "group": "303b2c5b498aa336",
+        "order": 4,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Nitrogen Dioxide",
+        "units": "ppb",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "100",
+                "color": "#fff82e"
+            },
+            {
+                "from": "175",
+                "color": "#ffc800"
+            },
+            {
+                "from": "250",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "10000",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1350,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "4bcf99a32097cc59",
+        "type": "ui-chart",
+        "z": "0bda988831a07691",
+        "group": "56f71db8d32fb665",
+        "name": "Carbon Dioxide",
+        "label": "Carbon Dioxide (ppm)",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "x": 900,
+        "y": 740,
+        "wires": [
+            [
+                "33cacbe7cd6a4d9e"
+            ]
+        ]
+    },
+    {
+        "id": "33cacbe7cd6a4d9e",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 740,
+        "wires": [
+            [
+                "39f8a7dc1179d3dc"
+            ]
+        ]
+    },
+    {
+        "id": "39f8a7dc1179d3dc",
+        "type": "ui-gauge",
+        "z": "0bda988831a07691",
+        "name": "Carbon Dioxide Gauge",
+        "group": "303b2c5b498aa336",
+        "order": 5,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Carbon Dioxide",
+        "units": "ppm",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "800",
+                "color": "#fff82e"
+            },
+            {
+                "from": "1150",
+                "color": "#ffc800"
+            },
+            {
+                "from": "1500",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "2000",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1340,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "05c01557589538d7",
+        "type": "ui-chart",
+        "z": "0bda988831a07691",
+        "group": "fc7414f0c153bcdb",
+        "name": "TVOCs",
+        "label": "TVOCs (ppb)",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "x": 880,
+        "y": 780,
+        "wires": [
+            [
+                "bba2d96d31c9c442"
+            ]
+        ]
+    },
+    {
+        "id": "bba2d96d31c9c442",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 780,
+        "wires": [
+            [
+                "48e498ea67182c40"
+            ]
+        ]
+    },
+    {
+        "id": "48e498ea67182c40",
+        "type": "ui-gauge",
+        "z": "0bda988831a07691",
+        "name": "TVOCs Gauge",
+        "group": "303b2c5b498aa336",
+        "order": 6,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "TVOCs",
+        "units": "ppb",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "400",
+                "color": "#fff82e"
+            },
+            {
+                "from": "600",
+                "color": "#ffc800"
+            },
+            {
+                "from": "800",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "1000",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1320,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "c3b7323a4c53a9c4",
+        "type": "ui-chart",
+        "z": "0bda988831a07691",
+        "group": "d9a9374417ec40c4",
+        "name": "Sulfur Dioxide",
+        "label": "Sulfur Dioxide (ppb)",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "x": 900,
+        "y": 820,
+        "wires": [
+            [
+                "5aafaa0afed61e1b"
+            ]
+        ]
+    },
+    {
+        "id": "5aafaa0afed61e1b",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 820,
+        "wires": [
+            [
+                "abece2f8e34bcd7d"
+            ]
+        ]
+    },
+    {
+        "id": "abece2f8e34bcd7d",
+        "type": "ui-gauge",
+        "z": "0bda988831a07691",
+        "name": "Sulfur Dioxide Gauge",
+        "group": "303b2c5b498aa336",
+        "order": 7,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Sulfur Dioxide",
+        "units": "ppb",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "500",
+                "color": "#fff82e"
+            },
+            {
+                "from": "750",
+                "color": "#ffc800"
+            },
+            {
+                "from": "1000",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "20000",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1340,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "0557fae3d7d83c14",
+        "type": "ui-chart",
+        "z": "0bda988831a07691",
+        "group": "50196f945c9b0686",
+        "name": "PM2.5",
+        "label": "PM2.5 (ug/m^3)",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "x": 870,
+        "y": 860,
+        "wires": [
+            [
+                "ded4beee265fae98"
+            ]
+        ]
+    },
+    {
+        "id": "ded4beee265fae98",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 860,
+        "wires": [
+            [
+                "7d1f32351fd8bc70"
+            ]
+        ]
+    },
+    {
+        "id": "7d1f32351fd8bc70",
+        "type": "ui-gauge",
+        "z": "0bda988831a07691",
+        "name": "PM2.5 Gauge",
+        "group": "303b2c5b498aa336",
+        "order": 8,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "PM2.5",
+        "units": "ug/m^3",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "15",
+                "color": "#fff82e"
+            },
+            {
+                "from": "20",
+                "color": "#ffc800"
+            },
+            {
+                "from": "30",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "1000",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1320,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "476fd47b4e5f6628",
+        "type": "ui-dropdown",
+        "z": "0bda988831a07691",
+        "group": "7a3306f1ec41f701",
+        "name": "Select Node",
+        "label": "Select Node",
+        "tooltip": "",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Node 0",
+                "value": "0",
+                "type": "str"
+            },
+            {
+                "label": "Node 1",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Node 2",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "Node 3",
+                "value": "3",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "c3568c2d48f1e842",
+                "f82c6bf81dc501e8"
+            ]
+        ]
+    },
+    {
+        "id": "af88785f906ff528",
+        "type": "ui-text",
+        "z": "0bda988831a07691",
+        "group": "7a3306f1ec41f701",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "name": "Battery",
+        "label": "Battery",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1300,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c3568c2d48f1e842",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "Selected Node",
+        "func": "// set default value for AQI\nglobal.set(\"AQI0\", 0);\nglobal.set(\"AQI1\", 0);\nglobal.set(\"AQI2\", 0);\nglobal.set(\"AQI3\", 0);\nglobal.set(\"AQI\", 0);\n\nglobal.set(\"nodeNum\", msg.payload);\nmsg.payload = global.get(\"nodeNum\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d12059b64488261a",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate packet loss rate",
+        "func": "var parameter = \"numDataPackets\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var data = payload[i][parameter];\n    if (!dataset.includes(data)){\n        // remove duplicates\n        dataset.push(data);\n    }\n}\n\n// get number of unique packets\nvar uniquePackets = dataset.length;\n\n// get latest packet count\ndataset.sort(function(a, b){return (a - b);});\nvar packetCount = dataset.slice(-1);\n\nmsg.payload = uniquePackets.toString() + \"/\" + packetCount.toString() ;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 940,
+        "wires": [
+            [
+                "2f8665852a487970"
+            ]
+        ]
+    },
+    {
+        "id": "2f8665852a487970",
+        "type": "ui-text",
+        "z": "0bda988831a07691",
+        "group": "303b2c5b498aa336",
+        "order": 10,
+        "width": "2",
+        "height": "2",
+        "name": "Packet Loss Rate",
+        "label": "Packet Count = ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1330,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "70189b58d3a24bbf",
+        "type": "watch",
+        "z": "0bda988831a07691",
+        "name": "watch data.csv",
+        "files": "C:\\Users\\Miguel Carlos\\Desktop\\School Stuff\\4th Year\\2nd Sem\\CoE 199\\Week 15\\data.csv",
+        "recursive": "",
+        "x": 240,
+        "y": 280,
+        "wires": [
+            [
+                "f82c6bf81dc501e8"
+            ]
+        ]
+    },
+    {
+        "id": "657b9c75b6298333",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate aqi chart",
+        "func": "var parameter = \"aqi\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 900,
+        "wires": [
+            [
+                "16e029cf92923797"
+            ]
+        ]
+    },
+    {
+        "id": "16e029cf92923797",
+        "type": "ui-chart",
+        "z": "0bda988831a07691",
+        "group": "83d60f3d69fccf51",
+        "name": "AQI",
+        "label": "AQI",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "yAxisProperty": "",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": "1",
+        "showLegend": false,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "x": 870,
+        "y": 900,
+        "wires": [
+            [
+                "6f27c9c74d8c7478"
+            ]
+        ]
+    },
+    {
+        "id": "6f27c9c74d8c7478",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 900,
+        "wires": [
+            [
+                "d0643b0bc426f3de"
+            ]
+        ]
+    },
+    {
+        "id": "d0643b0bc426f3de",
+        "type": "ui-gauge",
+        "z": "0bda988831a07691",
+        "name": "AQI Gauge",
+        "group": "303b2c5b498aa336",
+        "order": 9,
+        "width": "2",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "AQI",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2bff00"
+            },
+            {
+                "from": "51",
+                "color": "#fff82e"
+            },
+            {
+                "from": "76",
+                "color": "#ffc800"
+            },
+            {
+                "from": "101",
+                "color": "#ff0000"
+            }
+        ],
+        "min": "0",
+        "max": "150",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1310,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "c4787c05d782a739",
+        "type": "link out",
+        "z": "0bda988831a07691",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "a5574221feb60fd6"
+        ],
+        "x": 275,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "22619809395c707f",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 420,
+        "wires": [
+            [
+                "af88785f906ff528"
+            ]
+        ]
+    },
+    {
+        "id": "8f6b2333b193fb5f",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate batt chart",
+        "func": "var parameter = \"batt\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 420,
+        "wires": [
+            [
+                "22619809395c707f"
+            ]
+        ]
+    },
+    {
+        "id": "b910da9dfb025f93",
+        "type": "debug",
+        "z": "0bda988831a07691",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "ba2876bbd24e16c6",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate elevcode chart",
+        "func": "var parameter = \"elevationCode\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 360,
+        "wires": [
+            [
+                "456d27d7726316bc"
+            ]
+        ]
+    },
+    {
+        "id": "456d27d7726316bc",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nmsg.payload = latest[0].y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 360,
+        "wires": [
+            [
+                "60e067bb85bcf037",
+                "e6c8d8c532561ec2"
+            ]
+        ]
+    },
+    {
+        "id": "60e067bb85bcf037",
+        "type": "ui-text",
+        "z": "0bda988831a07691",
+        "d": true,
+        "group": "7a3306f1ec41f701",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "name": "Elevation Code",
+        "label": "Elevation Code",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1320,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "0398aa4c0e3c3b82",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "generate timestamp chart",
+        "func": "var parameter = \"timestamp\";\nvar payload = msg.payload;\nvar dataset = [];\n\nfor(let i = 0; i < payload.length; i++){\n    var timestamp = payload[i][\"timestamp\"] * 1000 - 28800000;\n    var data = payload[i][parameter];\n    dataset.push({\"x\": timestamp, \"y\": data});\n}\n\nmsg.payload = dataset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 300,
+        "wires": [
+            [
+                "0603bb30ea0c2f9b"
+            ]
+        ]
+    },
+    {
+        "id": "0603bb30ea0c2f9b",
+        "type": "function",
+        "z": "0bda988831a07691",
+        "name": "get latest value",
+        "func": "var dataset = msg.payload;\nvar latest = dataset.slice(-1);\nvar datetime = new Date(latest[0].y * 1000 - 28800000).toString();\nmsg.payload = datetime;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 300,
+        "wires": [
+            [
+                "66c1085a26fdebfa"
+            ]
+        ]
+    },
+    {
+        "id": "66c1085a26fdebfa",
+        "type": "ui-text",
+        "z": "0bda988831a07691",
+        "group": "7a3306f1ec41f701",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "name": "Last Seen",
+        "label": "Last Seen",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1300,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e6c8d8c532561ec2",
+        "type": "mqtt out",
+        "z": "0bda988831a07691",
+        "name": "",
+        "topic": "elevCode",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 1300,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "bd18455b7cdac371",
+        "type": "ui-control",
+        "z": "76e8039e6f804332",
+        "name": "",
+        "ui": "124ec8c65985746d",
+        "events": "all",
+        "x": 1100,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4297d2569cffc5a",
+        "type": "ui-dropdown",
+        "z": "76e8039e6f804332",
+        "group": "303b2c5b498aa336",
+        "name": "Show Chart",
+        "label": "Show Chart",
+        "tooltip": "",
+        "order": 11,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Relative Humidity",
+                "value": "Relative Humidity",
+                "type": "str"
+            },
+            {
+                "label": "Temperature",
+                "value": "Temperature",
+                "type": "str"
+            },
+            {
+                "label": "Carbon Monoxide",
+                "value": "Carbon Monoxide",
+                "type": "str"
+            },
+            {
+                "label": "Nitrogen Dioxide",
+                "value": "Nitrogen Dioxide",
+                "type": "str"
+            },
+            {
+                "label": "Carbon Dioxide",
+                "value": "Carbon Dioxide",
+                "type": "str"
+            },
+            {
+                "label": "TVOCs",
+                "value": "TVOCs",
+                "type": "str"
+            },
+            {
+                "label": "Sulfur Dioxide",
+                "value": "Sulfur Dioxide",
+                "type": "str"
+            },
+            {
+                "label": "PM2.5",
+                "value": "PM2.5",
+                "type": "str"
+            },
+            {
+                "label": "AQI",
+                "value": "AQI",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "7ab972f8ad7efe00"
+            ]
+        ]
+    },
+    {
+        "id": "7ab972f8ad7efe00",
+        "type": "switch",
+        "z": "76e8039e6f804332",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Relative Humidity",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Temperature",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Carbon Monoxide",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Nitrogen Dioxide",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Carbon Dioxide",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "TVOCs",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Sulfur Dioxide",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "PM2.5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AQI",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 9,
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "e8ce6a8225bf77cc"
+            ],
+            [
+                "50c51dd06c44e161"
+            ],
+            [
+                "17b3c1c26e09d28f"
+            ],
+            [
+                "cc82652c0fde0d71"
+            ],
+            [
+                "5b910bfcaaaa32e1"
+            ],
+            [
+                "d3831d946fc69529"
+            ],
+            [
+                "c1be684e889e03ad"
+            ],
+            [
+                "91e4a5ca801c9ffe"
+            ],
+            [
+                "3e9ba50bad13104b"
+            ]
+        ]
+    },
+    {
+        "id": "e8ce6a8225bf77cc",
+        "type": "change",
+        "z": "76e8039e6f804332",
+        "name": "Relative Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"groups\":{\"show\":[\"Node 0:Relative Humidity\"],\"hide\":[\"Node 0:Temperature\",\"Node 0:Carbon Monoxide\",\"Node 0:Nitrogen Dioxide\",\"Node 0:Carbon Dioxide\",\"Node 0:TVOCs\",\"Node 0:Sulfur Dioxide\",\"Node 0:PM2.5\",\"Node 0:AQI\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 120,
+        "wires": [
+            [
+                "bd18455b7cdac371"
+            ]
+        ]
+    },
+    {
+        "id": "50c51dd06c44e161",
+        "type": "change",
+        "z": "76e8039e6f804332",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"groups\":{\"show\":[\"Node 0:Temperature\"],\"hide\":[\"Node 0:Relative Humidity\",\"Node 0:Carbon Monoxide\",\"Node 0:Nitrogen Dioxide\",\"Node 0:Carbon Dioxide\",\"Node 0:TVOCs\",\"Node 0:Sulfur Dioxide\",\"Node 0:PM2.5\",\"Node 0:AQI\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 160,
+        "wires": [
+            [
+                "bd18455b7cdac371"
+            ]
+        ]
+    },
+    {
+        "id": "17b3c1c26e09d28f",
+        "type": "change",
+        "z": "76e8039e6f804332",
+        "name": "Carbon Monoxide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"groups\":{\"show\":[\"Node 0:Carbon Monoxide\"],\"hide\":[\"Node 0:Relative Humidity\",\"Node 0:Temperature\",\"Node 0:Nitrogen Dioxide\",\"Node 0:Carbon Dioxide\",\"Node 0:TVOCs\",\"Node 0:Sulfur Dioxide\",\"Node 0:PM2.5\",\"Node 0:AQI\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 200,
+        "wires": [
+            [
+                "bd18455b7cdac371"
+            ]
+        ]
+    },
+    {
+        "id": "cc82652c0fde0d71",
+        "type": "change",
+        "z": "76e8039e6f804332",
+        "name": "Nitrogen Dioxide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"groups\":{\"show\":[\"Node 0:Nitrogen Dioxide\"],\"hide\":[\"Node 0:Relative Humidity\",\"Node 0:Temperature\",\"Node 0:Carbon Monoxide\",\"Node 0:Carbon Dioxide\",\"Node 0:TVOCs\",\"Node 0:Sulfur Dioxide\",\"Node 0:PM2.5\",\"Node 0:AQI\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 240,
+        "wires": [
+            [
+                "bd18455b7cdac371"
+            ]
+        ]
+    },
+    {
+        "id": "5b910bfcaaaa32e1",
+        "type": "change",
+        "z": "76e8039e6f804332",
+        "name": "Carbon Dioxide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"groups\":{\"show\":[\"Node 0:Carbon Dioxide\"],\"hide\":[\"Node 0:Relative Humidity\",\"Node 0:Temperature\",\"Node 0:Carbon Monoxide\",\"Node 0:Nitrogen Dioxide\",\"Node 0:TVOCs\",\"Node 0:Sulfur Dioxide\",\"Node 0:PM2.5\",\"Node 0:AQI\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 280,
+        "wires": [
+            [
+                "bd18455b7cdac371"
+            ]
+        ]
+    },
+    {
+        "id": "d3831d946fc69529",
+        "type": "change",
+        "z": "76e8039e6f804332",
+        "name": "TVOCs",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"groups\":{\"show\":[\"Node 0:TVOCs\"],\"hide\":[\"Node 0:Relative Humidity\",\"Node 0:Temperature\",\"Node 0:Carbon Monoxide\",\"Node 0:Nitrogen Dioxide\",\"Node 0:Carbon Dioxide\",\"Node 0:Sulfur Dioxide\",\"Node 0:PM2.5\",\"Node 0:AQI\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 320,
+        "wires": [
+            [
+                "bd18455b7cdac371"
+            ]
+        ]
+    },
+    {
+        "id": "c1be684e889e03ad",
+        "type": "change",
+        "z": "76e8039e6f804332",
+        "name": "Sulfur Dioxide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"groups\":{\"show\":[\"Node 0:Sulfur Dioxide\"],\"hide\":[\"Node 0:Relative Humidity\",\"Node 0:Temperature\",\"Node 0:Carbon Monoxide\",\"Node 0:Nitrogen Dioxide\",\"Node 0:Carbon Dioxide\",\"Node 0:TVOCs\",\"Node 0:PM2.5\",\"Node 0:AQI\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 360,
+        "wires": [
+            [
+                "bd18455b7cdac371"
+            ]
+        ]
+    },
+    {
+        "id": "91e4a5ca801c9ffe",
+        "type": "change",
+        "z": "76e8039e6f804332",
+        "name": "PM2.5",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"groups\":{\"show\":[\"Node 0:PM2.5\"],\"hide\":[\"Node 0:Relative Humidity\",\"Node 0:Temperature\",\"Node 0:Carbon Monoxide\",\"Node 0:Nitrogen Dioxide\",\"Node 0:Carbon Dioxide\",\"Node 0:TVOCs\",\"Node 0:Sulfur Dioxide\",\"Node 0:AQI\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 400,
+        "wires": [
+            [
+                "bd18455b7cdac371"
+            ]
+        ]
+    },
+    {
+        "id": "3e9ba50bad13104b",
+        "type": "change",
+        "z": "76e8039e6f804332",
+        "name": "AQI",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"groups\":{\"show\":[\"Node 0:AQI\"],\"hide\":[\"Node 0:Relative Humidity\",\"Node 0:Temperature\",\"Node 0:Carbon Monoxide\",\"Node 0:Nitrogen Dioxide\",\"Node 0:Carbon Dioxide\",\"Node 0:TVOCs\",\"Node 0:Sulfur Dioxide\",\"Node 0:PM2.5\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 440,
+        "wires": [
+            [
+                "bd18455b7cdac371"
+            ]
+        ]
+    },
+    {
+        "id": "8031389338546ecb",
+        "type": "ui-notification",
+        "z": "f41a1d872a41b6e7",
+        "ui": "124ec8c65985746d",
+        "position": "top center",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "10",
+        "showCountdown": true,
+        "outputs": 0,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "raw": true,
+        "className": "",
+        "name": "Symptom Alerts",
+        "x": 1120,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "04458a6a5c93c2e5",
+        "type": "function",
+        "z": "f41a1d872a41b6e7",
+        "name": "format alert",
+        "func": "var rawAlert = msg.payload;\nvar dateTime = new Date(rawAlert.timestamp);\nvar symptoms = rawAlert.symptoms;\nvar alert = dateTime.toLocaleString() + \"<br>Occupants are experiencing the following symptoms:<br>\";\nalert += \"<ul>\"\nfor(let i = 0; i < symptoms.length; i++){\n    alert += (\"<li>\" + symptoms[i] + \"</li>\");\n}\nalert += \"</ul>\";\nmsg.payload = alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 260,
+        "wires": [
+            [
+                "8031389338546ecb"
+            ]
+        ]
+    },
+    {
+        "id": "d444f22f4280f803",
+        "type": "file",
+        "z": "f41a1d872a41b6e7",
+        "name": "save to symptoms.txt",
+        "filename": "/home/miggy/Desktop/UP_CARE_TEAM_1I/symptoms.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 400,
+        "y": 440,
+        "wires": [
+            [
+                "542b307833eedb86"
+            ]
+        ]
+    },
+    {
+        "id": "3b3baf733612d5a3",
+        "type": "function",
+        "z": "f41a1d872a41b6e7",
+        "name": "get symptoms as list",
+        "func": "var symptoms = msg.payload.split(\"\\n\").slice(0, -1);\nmsg.payload = symptoms;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 440,
+        "wires": [
+            [
+                "858485c612c8b46c",
+                "2c4f6e447e32418a",
+                "6d19f41d21133450",
+                "e251f778d26d4ae7"
+            ]
+        ]
+    },
+    {
+        "id": "542b307833eedb86",
+        "type": "file in",
+        "z": "f41a1d872a41b6e7",
+        "name": "read symptoms.txt",
+        "filename": "/home/miggy/Desktop/UP_CARE_TEAM_1I/symptoms.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 630,
+        "y": 440,
+        "wires": [
+            [
+                "3b3baf733612d5a3"
+            ]
+        ]
+    },
+    {
+        "id": "861c7a7f86149c07",
+        "type": "ui-text",
+        "z": "f41a1d872a41b6e7",
+        "group": "f491eab633a3ed2c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "-1 response",
+        "label": "1",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1270,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "858485c612c8b46c",
+        "type": "function",
+        "z": "f41a1d872a41b6e7",
+        "name": "get -1 response",
+        "func": "var num = -1;\nvar list = msg.payload;\nvar rawAlert = JSON.parse(list.slice(num)[0]);\nvar dateTime = new Date(rawAlert.timestamp);\nvar symptoms = rawAlert.symptoms;\nvar alert = \"    \" + dateTime.toLocaleString() + \" \";\nfor(let i = 0; i < symptoms.length; i++){\n    alert += (symptoms[i] + \", \");\n}\nalert = alert.slice(0, -2);\nmsg.payload = alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 440,
+        "wires": [
+            [
+                "861c7a7f86149c07"
+            ]
+        ]
+    },
+    {
+        "id": "9ef530e6eee247f1",
+        "type": "ui-text",
+        "z": "f41a1d872a41b6e7",
+        "group": "f491eab633a3ed2c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "-2 response",
+        "label": "2",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1270,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2c4f6e447e32418a",
+        "type": "function",
+        "z": "f41a1d872a41b6e7",
+        "name": "get -2 response",
+        "func": "var num = -2;\nvar list = msg.payload;\nvar rawAlert = JSON.parse(list.slice(num)[0]);\nvar dateTime = new Date(rawAlert.timestamp);\nvar symptoms = rawAlert.symptoms;\nvar alert = \"    \" + dateTime.toLocaleString() + \" \";\nfor(let i = 0; i < symptoms.length; i++){\n    alert += (symptoms[i] + \", \");\n}\nalert = alert.slice(0, -2);\nmsg.payload = alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 480,
+        "wires": [
+            [
+                "9ef530e6eee247f1"
+            ]
+        ]
+    },
+    {
+        "id": "9a9dc746e9abcc3e",
+        "type": "ui-text",
+        "z": "f41a1d872a41b6e7",
+        "group": "f491eab633a3ed2c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "-3 response",
+        "label": "3",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1270,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "6d19f41d21133450",
+        "type": "function",
+        "z": "f41a1d872a41b6e7",
+        "name": "get -3 response",
+        "func": "var num = -3;\nvar list = msg.payload;\nvar rawAlert = JSON.parse(list.slice(num)[0]);\nvar dateTime = new Date(rawAlert.timestamp);\nvar symptoms = rawAlert.symptoms;\nvar alert = \"    \" + dateTime.toLocaleString() + \" \";\nfor(let i = 0; i < symptoms.length; i++){\n    alert += (symptoms[i] + \", \");\n}\nalert = alert.slice(0, -2);\nmsg.payload = alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 520,
+        "wires": [
+            [
+                "9a9dc746e9abcc3e"
+            ]
+        ]
+    },
+    {
+        "id": "d454175083b42b41",
+        "type": "ui-text",
+        "z": "f41a1d872a41b6e7",
+        "group": "f491eab633a3ed2c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "-4 response",
+        "label": "4",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 1270,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e251f778d26d4ae7",
+        "type": "function",
+        "z": "f41a1d872a41b6e7",
+        "name": "get -4 response",
+        "func": "var num = -4;\nvar list = msg.payload;\nvar rawAlert = JSON.parse(list.slice(num)[0]);\nvar dateTime = new Date(rawAlert.timestamp);\nvar symptoms = rawAlert.symptoms;\nvar alert = \"    \" + dateTime.toLocaleString() + \" \";\nfor(let i = 0; i < symptoms.length; i++){\n    alert += (symptoms[i] + \", \");\n}\nalert = alert.slice(0, -2);\nmsg.payload = alert;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 560,
+        "wires": [
+            [
+                "d454175083b42b41"
+            ]
+        ]
+    },
+    {
+        "id": "500c0f94767010a7",
+        "type": "mqtt in",
+        "z": "f41a1d872a41b6e7",
+        "name": "",
+        "topic": "symptoms",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "e54ca58027519cfe",
+                "04458a6a5c93c2e5",
+                "d444f22f4280f803"
+            ]
+        ]
+    },
+    {
+        "id": "e54ca58027519cfe",
+        "type": "debug",
+        "z": "f41a1d872a41b6e7",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f93d1d1fad7c1d34",
+        "type": "watch",
+        "z": "1b6599bcc64f15ea",
+        "name": "watch log.txt",
+        "files": "/home/miggy/Desktop/UP_CARE_TEAM_1I/log.txt",
+        "recursive": "",
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "973ee8877a2aae1f"
+            ]
+        ]
+    },
+    {
+        "id": "973ee8877a2aae1f",
+        "type": "file in",
+        "z": "1b6599bcc64f15ea",
+        "name": "read log.txt",
+        "filename": "/home/miggy/Desktop/UP_CARE_TEAM_1I/log.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 210,
+        "y": 200,
+        "wires": [
+            [
+                "83ac4786b22b2cc1"
+            ]
+        ]
+    },
+    {
+        "id": "83ac4786b22b2cc1",
+        "type": "function",
+        "z": "1b6599bcc64f15ea",
+        "name": "get last 1000 characters",
+        "func": "var entry = msg.payload;\nvar log = entry.substr(entry.length - 1000);\nvar fixedLog = \"\"\nfor (let i = 0; i < log.length; i+=2){\n    if (log.slice(i,i+2) == \"\\n\"){\n        var tempStr = fixedLog.concat(\"<br>\");\n        fixedLog = tempStr;\n    }else{\n        var tempStr = fixedLog.concat(log.slice(i, i + 2));\n        fixedLog = tempStr;\n    }\n}\n\nmsg.payload = fixedLog\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 260,
+        "wires": [
+            [
+                "7a603036376c5e29"
+            ]
+        ]
+    },
+    {
+        "id": "7a603036376c5e29",
+        "type": "ui-text",
+        "z": "1b6599bcc64f15ea",
+        "group": "b9ba6607046204ab",
+        "order": 0,
+        "width": "12",
+        "height": "1",
+        "name": "log.txt",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a7d3b1eb006eacd2",
+        "type": "function",
+        "z": "1b6599bcc64f15ea",
+        "name": "function 1",
+        "func": "var num = global.get(\"num\");\nmsg.payload = num;\nif (num) {\n    global.set(\"num\", 0);\n} else {\n    global.set(\"num\", 1);\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"num\", 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "bd67ac8dcf7f2c6c"
+            ]
+        ]
+    },
+    {
+        "id": "bd67ac8dcf7f2c6c",
+        "type": "ui-text",
+        "z": "1b6599bcc64f15ea",
+        "group": "29cda8db2548026c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 490,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "0e3aa754224c3427",
+        "type": "mqtt in",
+        "z": "1b6599bcc64f15ea",
+        "name": "",
+        "topic": "test",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "10e78a89.5b4fd5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "a7d3b1eb006eacd2"
+            ]
+        ]
+    },
+    {
+        "id": "5afeccf4a8d0ecb7",
+        "type": "mqtt out",
+        "z": "1b6599bcc64f15ea",
+        "name": "",
+        "topic": "test2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 330,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4816c2430bb3060f",
+        "type": "inject",
+        "z": "1b6599bcc64f15ea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 380,
+        "wires": [
+            [
+                "5afeccf4a8d0ecb7"
+            ]
+        ]
+    },
+    {
+        "id": "f6d4f583f7973359",
+        "type": "function",
+        "z": "d326894b03b08307",
+        "name": "get symptoms and add timestamp",
+        "func": "var response = msg.payload;\n\n// get symptoms \nvar keys = Object.keys(response);\n\nvar symptoms = keys.filter(function(key) {\n return response[key]\n});\n\nvar timestamp = new Date().getTime();\nvar responseLog = {timestamp:timestamp, symptoms:symptoms}\n\nmsg.payload = responseLog;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 140,
+        "wires": [
+            [
+                "7dbb618a2cfc1e5a",
+                "b6810e9d8eb1005a"
+            ]
+        ]
+    },
+    {
+        "id": "c93f7afabac91a66",
+        "type": "ui_form",
+        "z": "d326894b03b08307",
+        "name": "",
+        "label": "Elevated Temperature Symptoms",
+        "group": "76b9dc3e43c791b8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Angina",
+                "value": "Angina",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Chest Pain",
+                "value": "Chest Pain",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Chills",
+                "value": "Chills",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Confusion",
+                "value": "Confusion",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Coughing",
+                "value": "Coughing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dehydration",
+                "value": "Dehydration",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Discomfort",
+                "value": "Discomfort",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dizziness",
+                "value": "Dizziness",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Drowsiness",
+                "value": "Drowsiness",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Fatigue",
+                "value": "Fatigue",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Headache",
+                "value": "Headache",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Heat Discomfort",
+                "value": "Heat Discomfort",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Heat Exhaustion",
+                "value": "Heat Exhaustion",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Hot/Red/Dry/Damp Skin",
+                "value": "Hot/Red/Dry/Damp Skin",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Muscle Cramps",
+                "value": "Muscle Cramps",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Nausea",
+                "value": "Nausea",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Rapid Breathing",
+                "value": "Rapid Breathing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shortness of Breath",
+                "value": "Shortness of Breath",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shaking ",
+                "value": "Shaking ",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shivering",
+                "value": "Shivering",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sweating",
+                "value": "Sweating",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Angina": false,
+            "Chest Pain": false,
+            "Chills": false,
+            "Confusion": false,
+            "Coughing": false,
+            "Dehydration": false,
+            "Discomfort": false,
+            "Dizziness": false,
+            "Drowsiness": false,
+            "Fatigue": false,
+            "Headache": false,
+            "Heat Discomfort": false,
+            "Heat Exhaustion": false,
+            "Hot/Red/Dry/Damp Skin": false,
+            "Muscle Cramps": false,
+            "Nausea": false,
+            "Rapid Breathing": false,
+            "Shortness of Breath": false,
+            "Shaking ": false,
+            "Shivering": false,
+            "Sweating": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "f6d4f583f7973359"
+            ]
+        ]
+    },
+    {
+        "id": "7dbb618a2cfc1e5a",
+        "type": "debug",
+        "z": "d326894b03b08307",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d8243bbf68396010",
+        "type": "ui_form",
+        "z": "d326894b03b08307",
+        "name": "",
+        "label": "Elevated Carbon Monoxide Symptoms",
+        "group": "8c45a1341fd57dc4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Confusion",
+                "value": "Confusion",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Chest Pain",
+                "value": "Chest Pain",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dizziness",
+                "value": "Dizziness",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Elevated Heart Rate",
+                "value": "Elevated Heart Rate",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Fatigue",
+                "value": "Fatigue",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Headache",
+                "value": "Headache",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Muscle Cramps",
+                "value": "Muscle Cramps",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Nausea",
+                "value": "Nausea",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Rapid Breathing",
+                "value": "Rapid Breathing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shaking",
+                "value": "Shaking",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shivering",
+                "value": "Shivering",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shortness of Breath",
+                "value": "Shortness of Breath",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sweating",
+                "value": "Sweating",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Confusion": false,
+            "Chest Pain": false,
+            "Dizziness": false,
+            "Elevated Heart Rate": false,
+            "Fatigue": false,
+            "Headache": false,
+            "Muscle Cramps": false,
+            "Nausea": false,
+            "Rapid Breathing": false,
+            "Shaking": false,
+            "Shivering": false,
+            "Shortness of Breath": false,
+            "Sweating": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 250,
+        "y": 320,
+        "wires": [
+            [
+                "f6d4f583f7973359"
+            ]
+        ]
+    },
+    {
+        "id": "6efdfc5b842389af",
+        "type": "ui_form",
+        "z": "d326894b03b08307",
+        "name": "",
+        "label": "Elevated Nitrogen Dioxide Symptoms",
+        "group": "674180135073528b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "test",
+                "value": "test",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "test": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "f6d4f583f7973359"
+            ]
+        ]
+    },
+    {
+        "id": "57a710ea6232e04c",
+        "type": "ui_form",
+        "z": "d326894b03b08307",
+        "name": "",
+        "label": "Elevated Carbon Dioxide Symptoms",
+        "group": "3a9d9dac206a8b03",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Confusion",
+                "value": "Confusion",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Chest Pain",
+                "value": "Chest Pain",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dizziness",
+                "value": "Dizziness",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Elevated Heart Rate",
+                "value": "Elevated Heart Rate",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Fatigue",
+                "value": "Fatigue",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Headache",
+                "value": "Headache",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Impaired Brain Function",
+                "value": "Impaired Brain Function",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Impaired Vision",
+                "value": "Impaired Vision",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Loss of Coordination",
+                "value": "Loss of Coordination",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Nausea",
+                "value": "Nausea",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Rapid Breathing",
+                "value": "Rapid Breathing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shortness of Breath",
+                "value": "Shortness of Breath",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sweating",
+                "value": "Sweating",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Confusion": false,
+            "Chest Pain": false,
+            "Dizziness": false,
+            "Elevated Heart Rate": false,
+            "Fatigue": false,
+            "Headache": false,
+            "Impaired Brain Function": false,
+            "Impaired Vision": false,
+            "Loss of Coordination": false,
+            "Nausea": false,
+            "Rapid Breathing": false,
+            "Shortness of Breath": false,
+            "Sweating": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "f6d4f583f7973359"
+            ]
+        ]
+    },
+    {
+        "id": "f8eac8739f8a8c74",
+        "type": "ui_form",
+        "z": "d326894b03b08307",
+        "name": "",
+        "label": "Elevated TVOC Symptoms",
+        "group": "28896e1cab19618b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Allergic Skin Reaction",
+                "value": "Allergic Skin Reaction",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Chest Pain",
+                "value": "Chest Pain",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Eye/Nose/Throat Irritation",
+                "value": "Eye/Nose/Throat Irritation",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Headache",
+                "value": "Headache",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Nausea",
+                "value": "Nausea",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Rapid Breathing",
+                "value": "Rapid Breathing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shortness of Breath",
+                "value": "Shortness of Breath",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sweating",
+                "value": "Sweating",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Allergic Skin Reaction": false,
+            "Chest Pain": false,
+            "Eye/Nose/Throat Irritation": false,
+            "Headache": false,
+            "Nausea": false,
+            "Rapid Breathing": false,
+            "Shortness of Breath": false,
+            "Sweating": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 280,
+        "y": 500,
+        "wires": [
+            [
+                "f6d4f583f7973359"
+            ]
+        ]
+    },
+    {
+        "id": "45053aece78c221f",
+        "type": "ui_form",
+        "z": "d326894b03b08307",
+        "name": "",
+        "label": "Elevated Sulfur Dioxide Symptoms",
+        "group": "56384246e83fe405",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Chest Pain",
+                "value": "Chest Pain",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Coughing",
+                "value": "Coughing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Eye/Nose/Throat Irritation",
+                "value": "Eye/Nose/Throat Irritation",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Rapid Breathing",
+                "value": "Rapid Breathing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shortness of Breath",
+                "value": "Shortness of Breath",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Wheezing",
+                "value": "Wheezing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Chest Pain": false,
+            "Coughing": false,
+            "Eye/Nose/Throat Irritation": false,
+            "Rapid Breathing": false,
+            "Shortness of Breath": false,
+            "Wheezing": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 260,
+        "y": 560,
+        "wires": [
+            [
+                "f6d4f583f7973359"
+            ]
+        ]
+    },
+    {
+        "id": "cb15a4dd08d4d869",
+        "type": "ui_form",
+        "z": "d326894b03b08307",
+        "name": "",
+        "label": "Elevated PM2.5 Symptoms",
+        "group": "146571f1128269bf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Chest Pain",
+                "value": "Chest Pain",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Coughing",
+                "value": "Coughing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Eye/Nose/Throat Irritation",
+                "value": "Eye/Nose/Throat Irritation",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Rapid Breathing",
+                "value": "Rapid Breathing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shortness of Breath",
+                "value": "Shortness of Breath",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Wheezing",
+                "value": "Wheezing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Chest Pain": false,
+            "Coughing": false,
+            "Eye/Nose/Throat Irritation": false,
+            "Rapid Breathing": false,
+            "Shortness of Breath": false,
+            "Wheezing": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 280,
+        "y": 620,
+        "wires": [
+            [
+                "f6d4f583f7973359"
+            ]
+        ]
+    },
+    {
+        "id": "7e5da28dab1c5e26",
+        "type": "ui_form",
+        "z": "d326894b03b08307",
+        "name": "",
+        "label": "All Symptoms",
+        "group": "92d45eef4c593c7c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Allergic Skin Reaction",
+                "value": "Allergic Skin Reaction",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Angina",
+                "value": "Angina",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Blue Skin",
+                "value": "Blue Skin",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Chapped Lips",
+                "value": "Chapped Lips",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Chest Pain",
+                "value": "Chest Pain",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Chills",
+                "value": "Chills",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Confusion",
+                "value": "Confusion",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Coughing",
+                "value": "Coughing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dehydration",
+                "value": "Dehydration",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Discomfort",
+                "value": "Discomfort",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dizziness",
+                "value": "Dizziness",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Drowsiness",
+                "value": "Drowsiness",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dry Nasal Passages",
+                "value": "Dry Nasal Passages",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dry Skin",
+                "value": "Dry Skin",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dryness",
+                "value": "Dryness",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Elevated Heart Rate",
+                "value": "Elevated Heart Rate",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Emesis",
+                "value": "Emesis",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Epistaxis",
+                "value": "Epistaxis",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Eye/Nose/Throat Irritation",
+                "value": "Eye/Nose/Throat Irritation",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Fast, Strong Pulse",
+                "value": "Fast, Strong Pulse",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Fatigue",
+                "value": "Fatigue",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Headache",
+                "value": "Headache",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Heat Discomfort",
+                "value": "Heat Discomfort",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Heat Exhaustion",
+                "value": "Heat Exhaustion",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Hot/Red/Dry/Damp Skin",
+                "value": "Hot/Red/Dry/Damp Skin",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Impaired Brain Function",
+                "value": "Impaired Brain Function",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Impaired Hearing",
+                "value": "Impaired Hearing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Impaired Vision",
+                "value": "Impaired Vision",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Loss of Coordination",
+                "value": "Loss of Coordination",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Muscle Cramps",
+                "value": "Muscle Cramps",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Muscle Twitching",
+                "value": "Muscle Twitching",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Nausea",
+                "value": "Nausea",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Rapid Breathing",
+                "value": "Rapid Breathing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Severe Eye/Nose/Throat Irritation",
+                "value": "Severe Eye/Nose/Throat Irritation",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shaking",
+                "value": "Shaking",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shivering",
+                "value": "Shivering",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shortness of Breath",
+                "value": "Shortness of Breath",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Slowed Breathing",
+                "value": "Slowed Breathing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Slowed Pulse",
+                "value": "Slowed Pulse",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sore Throat",
+                "value": "Sore Throat",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sweating",
+                "value": "Sweating",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Wheezing",
+                "value": "Wheezing",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Allergic Skin Reaction": false,
+            "Angina": false,
+            "Blue Skin": false,
+            "Chapped Lips": false,
+            "Chest Pain": false,
+            "Chills": false,
+            "Confusion": false,
+            "Coughing": false,
+            "Dehydration": false,
+            "Discomfort": false,
+            "Dizziness": false,
+            "Drowsiness": false,
+            "Dry Nasal Passages": false,
+            "Dry Skin": false,
+            "Dryness": false,
+            "Elevated Heart Rate": false,
+            "Emesis": false,
+            "Epistaxis": false,
+            "Eye/Nose/Throat Irritation": false,
+            "Fast, Strong Pulse": false,
+            "Fatigue": false,
+            "Headache": false,
+            "Heat Discomfort": false,
+            "Heat Exhaustion": false,
+            "Hot/Red/Dry/Damp Skin": false,
+            "Impaired Brain Function": false,
+            "Impaired Hearing": false,
+            "Impaired Vision": false,
+            "Loss of Coordination": false,
+            "Muscle Cramps": false,
+            "Muscle Twitching": false,
+            "Nausea": false,
+            "Rapid Breathing": false,
+            "Severe Eye/Nose/Throat Irritation": false,
+            "Shaking": false,
+            "Shivering": false,
+            "Shortness of Breath": false,
+            "Slowed Breathing": false,
+            "Slowed Pulse": false,
+            "Sore Throat": false,
+            "Sweating": false,
+            "Wheezing": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "f6d4f583f7973359"
+            ]
+        ]
+    },
+    {
+        "id": "b6810e9d8eb1005a",
+        "type": "mqtt out",
+        "z": "d326894b03b08307",
+        "name": "",
+        "topic": "symptoms",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10e78a89.5b4fd5",
+        "x": 890,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "080293d91fc5a8a4",
+        "type": "ui_form",
+        "z": "d326894b03b08307",
+        "name": "",
+        "label": "Elevated Relative Humidity Symptoms",
+        "group": "712b701e3f1a6ef8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Allergic Skin Reaction",
+                "value": "Allergic Skin Reaction",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Chapped Lips",
+                "value": "Chapped Lips",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Discomfort",
+                "value": "Discomfort",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dry Nasal Passages",
+                "value": "Dry Nasal Passages",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Dry Skin",
+                "value": "Dry Skin",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Eye/Nose/Throat Irritation",
+                "value": "Eye/Nose/Throat Irritation",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Fatigue",
+                "value": "Fatigue",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Headache",
+                "value": "Headache",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Heat Discomfort",
+                "value": "Heat Discomfort",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Heat Exhaustion",
+                "value": "Heat Exhaustion",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Hot/Red/Dry/Damp Skin",
+                "value": "Hot/Red/Dry/Damp Skin",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Muscle Cramps",
+                "value": "Muscle Cramps",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Nausea",
+                "value": "Nausea",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Shivering",
+                "value": "Shivering",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Sweating",
+                "value": "Sweating",
+                "type": "checkbox",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Allergic Skin Reaction": false,
+            "Chapped Lips": false,
+            "Discomfort": false,
+            "Dry Nasal Passages": false,
+            "Dry Skin": false,
+            "Eye/Nose/Throat Irritation": false,
+            "Fatigue": false,
+            "Headache": false,
+            "Heat Discomfort": false,
+            "Heat Exhaustion": false,
+            "Hot/Red/Dry/Damp Skin": false,
+            "Muscle Cramps": false,
+            "Nausea": false,
+            "Shivering": false,
+            "Sweating": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": true,
+        "className": "",
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "f6d4f583f7973359"
+            ]
+        ]
+    },
+    {
+        "id": "48d8072b757f3b92",
+        "type": "ui_ui_control",
+        "z": "d326894b03b08307",
+        "name": "",
+        "events": "all",
+        "x": 880,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    }
+]
